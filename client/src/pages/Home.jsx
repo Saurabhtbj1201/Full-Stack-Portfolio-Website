@@ -9,6 +9,7 @@ import Experience from '../components/Experience';
 import Awards from '../components/Awards';
 import Certifications from '../components/Certifications';
 import Articles from '../components/Articles';
+import Subdomains from '../components/Subdomains';
 import '../styles/Home.css';
 
 const Home = () => {
@@ -367,6 +368,9 @@ const Home = () => {
 
       {/* Projects Section */}
       <Projects />
+
+      {/* Subdomains Section */}
+      <Subdomains />
 
       {/* Experience Section */}
       <Experience />

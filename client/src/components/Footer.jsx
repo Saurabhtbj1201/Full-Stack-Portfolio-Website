@@ -290,9 +290,9 @@ const Footer = () => {
             © Designed with <span className="heart">♥</span> by <strong>Saurabh Kumar</strong>. All Rights Reserved 2025
           </p>
           <div className="footer-links-right">
-            <a href="#privacy" className="footer-bottom-link">Privacy</a>
+            <a href="/privacy" className="footer-bottom-link">Privacy</a>
             <span className="separator">|</span>
-            <a href="#terms" className="footer-bottom-link">Terms</a>
+            <a href="/terms" className="footer-bottom-link">Terms</a>
             <span className="separator">|</span>
             <a href="/login" className="footer-bottom-link">Admin</a>
           </div>
