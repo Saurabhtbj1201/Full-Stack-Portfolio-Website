@@ -97,11 +97,11 @@
   border: 1px solid var(--border-color);
   padding: 1.5rem;
   border-radius: 10px;
-
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .certificates-list-container {
+  max-height: 150vh;
   overflow-y: auto;
   padding-right: 0.5rem;
 }
@@ -639,7 +639,7 @@
   }
 
   .certificates-list-container {
-    max-height: 300px;
+    max-height: 350px;
   }
 
   .certificate-list-item {

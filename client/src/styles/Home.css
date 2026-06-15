@@ -50,10 +50,11 @@
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #00aaff 0%, #ff0088 100%);
+  background: linear-gradient(135deg, #0055ff 0%, #ff0088 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-family: cursive;
 }
 
 .hero-tagline {
@@ -118,20 +119,18 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: rgba(102, 126, 234, 0.1);
+  background: rgba(234, 102, 150, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #667eea;
-  transition: all 0.3s ease;
-  border: 2px solid rgba(102, 126, 234, 0.3);
+  color: #d62d7d;
+  transition: all 0.1s ease;
+  border: 1px solid rgba(234, 102, 139, 0.3);
 }
 
 .social-icon:hover {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #e8328d 0%, #e8365f 100%);
   color: #fff;
-  transform: translateY(-5px) rotate(10deg);
-  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
 }
 
 .hero-right {

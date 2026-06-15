@@ -85,7 +85,7 @@
 .skills-categories {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .skill-category {
@@ -113,12 +113,9 @@
 }
 
 .skills-ribbon {
-  position: relative;
   overflow: hidden;
   background: rgba(102, 126, 234, 0.05);
-  border-radius: 15px;
   padding: 1rem 0;
-  border: 1px solid rgba(102, 126, 234, 0.1);
 }
 
 .skills-scroll-container {
@@ -166,7 +163,7 @@
 }
 
 .skill-image img {
-  height: 100%;
+  height: 60%;
   object-fit: cover;
 }
 
@@ -243,10 +240,6 @@
 
   .category-header {
     margin-bottom: 1rem;
-  }
-
-  .skills-ribbon {
-    padding: 1rem 0;
   }
 
   .skill-item {
