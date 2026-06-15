@@ -1,0 +1,116 @@
+.privacy-page {
+  min-height: calc(100vh - 70px);
+  padding: 2.25rem 1.25rem;
+}
+
+.privacy-shell {
+  width: min(940px, 100%);
+  margin: 0 auto;
+  padding: clamp(1rem, 2vw, 1.75rem);
+}
+
+.privacy-head {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.privacy-kicker {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #ff0057;
+  margin-bottom: 0.35rem;
+}
+
+.privacy-head h1 {
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  line-height: 1.2;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.privacy-meta {
+  margin-top: 0.4rem;
+  color: #64748b;
+  font-size: 0.88rem;
+}
+
+.privacy-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.7rem;
+}
+
+.privacy-block {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 0.75rem 0.9rem;
+  background: color-mix(in oklab, var(--bg-color) 94%, #ffffff 6%);
+}
+
+.privacy-block h2 {
+  font-size: 0.95rem;
+  margin: 0 0 0.35rem;
+  color: var(--text-color);
+}
+
+.privacy-block p {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 0.89rem;
+  line-height: 1.5;
+}
+
+.privacy-block a {
+  color: #d10054;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.privacy-block a:hover {
+  text-decoration: underline;
+}
+
+.privacy-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.privacy-btn {
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 0.86rem;
+  font-weight: 700;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.privacy-btn.primary {
+  background: linear-gradient(135deg, #ff0058 0%, #005dff 100%);
+  color: #fff;
+}
+
+.privacy-btn.ghost {
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.privacy-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .privacy-page {
+    padding: 1.25rem 0.75rem;
+  }
+
+  .privacy-shell {
+    border-radius: 12px;
+    padding: 0.9rem;
+  }
+}

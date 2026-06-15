@@ -369,9 +369,6 @@ const Home = () => {
       {/* Projects Section */}
       <Projects />
 
-      {/* Subdomains Section */}
-      <Subdomains />
-
       {/* Experience Section */}
       <Experience />
 
