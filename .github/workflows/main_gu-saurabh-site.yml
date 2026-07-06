@@ -65,5 +65,5 @@ jobs:
         with:
           app-name: 'gu-saurabh-site'
           slot-name: 'Production'
-          package: server
+          package: ./server
           
