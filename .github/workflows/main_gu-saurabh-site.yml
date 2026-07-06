@@ -14,6 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read #This is required for actions/checkout
+      
+    defaults:
+        run:
+            working-directory: server
 
     steps:
       - uses: actions/checkout@v4
@@ -33,7 +37,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: .
+          path: server
 
   deploy:
     runs-on: ubuntu-latest
@@ -61,5 +65,5 @@ jobs:
         with:
           app-name: 'gu-saurabh-site'
           slot-name: 'Production'
-          package: .
+          package: server
           
