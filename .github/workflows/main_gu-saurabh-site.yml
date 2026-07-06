@@ -15,10 +15,6 @@ jobs:
     permissions:
       contents: read #This is required for actions/checkout
 
-    defaults:
-      run:
-        working-directory: server
-
     steps:
       - uses: actions/checkout@v4
 
@@ -37,7 +33,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: server
+          path: .
 
   deploy:
     runs-on: ubuntu-latest
@@ -51,14 +47,13 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: node-app
-          path: server
       
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.__clientidsecretname__ }}
-          tenant-id: ${{ secrets.__tenantidsecretname__ }}
-          subscription-id: ${{ secrets.__subscriptionidsecretname__ }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_681F640C67FF4597954C9D30B0159E4C }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_48FABC5A345F44DDA756918703B7E5A5 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_C229081EA09A4FF2A9259B98ED85C75B }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
@@ -66,4 +61,5 @@ jobs:
         with:
           app-name: 'gu-saurabh-site'
           slot-name: 'Production'
-          package: ./server
+          package: .
+          
